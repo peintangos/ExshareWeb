@@ -28,6 +28,6 @@ export default {
 <style>
 .all-content {
   height: 1000px;
-  background-color: blue;
+  font-family: 'Arial';
 }
 </style>
