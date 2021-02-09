@@ -21,6 +21,8 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .top-image-bottom {
