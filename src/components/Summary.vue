@@ -7,18 +7,19 @@
       <div class="summary-main-upper-content-top">Vision</div>
       <div class="summary-main-upper-content-bottom">
         <div class="summary-main-upper-content-bottom-first">
-          We create the world where everyone can share the experience
+          We create the world where everyone can share the
+          <span class="primary-text-color">ex</span>perience
         </div>
-        <div>誰もが自分の経験や才能を生かすことのできる社会の創設を。</div>
+        <div>誰もが自分の<span class="primary-text-color">経</span>験や才能を生かすことのできる社会の創設を。</div>
       </div>
     </div>
     <div class="summary-main-lower-content">
       <div class="summary-main-lower-content-top">Product</div>
       <div class="summary-main-lower-content-bottom">
         <div class="summary-main-lower-content-bottom-first">
-          Exshare
+          <span class="primary-text-color">Ex</span>share
         </div>
-        <div>経験やスキルを共有することができるプラットフォームです。</div>
+        <div><span class="primary-text-color">経</span>験やスキルを共有することができるプラットフォームです。</div>
       </div>
     </div>
   </div>
@@ -31,7 +32,6 @@ export default {};
 <style scoped>
 .summary-main {
   background-color: white;
-  height: 1080px;
   margin-top: 100px;
   margin-left: 100px;
   margin-right: 100px;
@@ -87,7 +87,7 @@ export default {};
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: calc(50px + 115px);
+  margin-left: calc(230px / 2);
   font-family: "Arial";
   font-size: 48px;
 }

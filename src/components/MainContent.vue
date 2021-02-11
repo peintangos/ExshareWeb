@@ -13,7 +13,7 @@
 import TopImage from "../components/TopImage.vue";
 import Summary from "../components/Summary.vue";
 import Business from "../components/Business.vue";
-import Service from "../components/Summary.vue";
+import Service from "../components/Service.vue";
 import Monetize from "../components/Monetize.vue";
 import Procedure from "../components/Procedure.vue";
 export default {
@@ -32,7 +32,6 @@ export default {
 <style>
 .main-content {
   height: 4000px;
-  background-color: darkgrey;
   text-align: center;
   margin-top: 50px;
 }
