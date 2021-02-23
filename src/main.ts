@@ -3,15 +3,15 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "./quasar";
-import VueI18n from 'vue-i18n';
 
 Vue.config.productionTip = false;
-// const data = require('./message.json');
-// Vue.use(VueI18n);
-// const i18n = new VueI18n({
-//   locale: 'ja',
-//   messages: data
-// });
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faUserSecret)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 
 new Vue({

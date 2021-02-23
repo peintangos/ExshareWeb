@@ -1,5 +1,5 @@
 <template>
-  <div class="monetize-main">
+  <div class="monetize-main" id="Monetize">
     <div class="monetize-main-title">Monetize</div>
     <div class="monetize-main-content">
       <table class="vue_tbl">
@@ -13,7 +13,7 @@
         <tbody>
           <tr
             v-for="(row, index) in rows"
-            :key="row"
+            :key="index"
             :class="{
               'monetize-background-color-in-turns': getBackgroundColor(index),
             }"

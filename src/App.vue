@@ -38,6 +38,10 @@ export default {
 .all-content {
   height: 1000px;
   font-family: "Arial";
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 .primary-text-color {
   color: #e69326;

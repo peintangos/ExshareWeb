@@ -1,15 +1,19 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
-import Home from "../views/Home.vue";
+import VueScrollTo from 'vue-scrollto'
+
+Vue.use(VueScrollTo, {
+  /* オプション色々あります。公式サイトから確認できます。 */
+  duration: 1000,
+  easing: "ease"
+})
+
 
 Vue.use(VueRouter);
 
+ 
+
 const routes: Array<RouteConfig> = [
-  {
-    path: "/",
-    name: "Home",
-    component: Home
-  },
   {
     path: "/about",
     name: "About",
@@ -22,6 +26,7 @@ const routes: Array<RouteConfig> = [
 ];
 
 const router = new VueRouter({
+  mode: 'history',
   routes
 });
 

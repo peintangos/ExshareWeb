@@ -1,5 +1,5 @@
 <template>
-  <div class="business-main">
+  <div class="business-main" id ="Businnes">
     <div class="business-text">Bussiness</div>
     <img src="../assets/business_new.png" class="business-main-img" />
   </div>
@@ -13,7 +13,7 @@ export default {
 
 <style scoped>
 .business-main {
-  background-color: #fafafa;
+  background-color: #ffffff;
   margin-top: 100px;
   margin-left: 100px;
   margin-right: 100px;

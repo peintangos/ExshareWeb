@@ -1,18 +1,18 @@
 <template>
-  <div class="service-main">
+  <div class="service-main" id="Service">
     <div class="service-text">
       Service
     </div>
     <div class="serivce-main-content">
       <div
-        v-for="skill in skillListItems"
-        :key="skill"
+        v-for="(skill,index) in skillListItems"
+        :key="index"
         class="service-skill-section"
       >
         <div class="service-skill-title">{{ skill.name }}</div>
         <div
           v-for="(value, index) in skill.data"
-          :key="value"
+          :key="index"
           class="service-skill-list"
           :class="{ 'service-background-color-in-turns': getBackgroundColor(index) }"
         >
@@ -62,6 +62,13 @@ export default {
       return index % 2 == 0;
     },
   },
+  watch: {
+  '$route' (newValue, oldValue) {
+    if (newValue.hash == 'Service') {
+      scrollTo(0, 1000); // トップに移動
+    }
+  }
+  }
 };
 </script>
 
