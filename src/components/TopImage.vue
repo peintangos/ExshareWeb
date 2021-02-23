@@ -1,6 +1,6 @@
 <template>
   <div class="top-image-main">
-    <img src="../assets/earth.jpg" class="top-image-content"/>
+    <img src="../assets/earth.jpg" class="top-image-content" />
     <div class="top-image-bottom">
       <img src="../assets/logo_new.svg" class="top-image-bottom-image" />
       <div class="top-image-bottom-text">
@@ -23,18 +23,24 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-left: 200px;
-  margin-right: 200px;
 }
-.top-image-content{
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.top-image-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 .top-image-bottom {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .top-image-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .top-image-bottom-image {

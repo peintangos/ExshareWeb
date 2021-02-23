@@ -1,5 +1,5 @@
 <template>
-  <div class="procedure-main">
+  <div class="procedure-main" id="Procedure">
     <div class="procedure-main-text">Procedure</div>
     <div class="procedure-main-section">
       <div class="procedure-main-upper">
@@ -11,8 +11,8 @@
           <div class="procedure-main-upper-title">4Phases</div>
           <div class="procedure-upper-circles">
             <div
-              v-for="buyerItem in buyerItems"
-              :key="buyerItem"
+              v-for="(buyerItem,index) in buyerItems"
+              :key="index"
               class="procedure-upper-circle"
             >
               {{ buyerItem.name }}
@@ -29,8 +29,8 @@
           <div class="procedure-main-lower-title">4Phases</div>
           <div class="procedure-lower-circles">
             <div
-              v-for="supplierItem in supplierItems"
-              :key="supplierItem"
+              v-for="(supplierItem,index) in supplierItems"
+              :key="index"
               class="procedure-lower-circle"
             >
               {{ supplierItem.name }}
@@ -66,7 +66,7 @@ export default {
 スキル・サービス の掲載・PR
 <style scoped>
 .procedure-main {
-  background-color: #fafafa;
+  background-color: #ffffff;
   margin-top: 100px;
   margin-left: 100px;
   margin-right: 100px;

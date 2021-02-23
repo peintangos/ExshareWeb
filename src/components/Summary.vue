@@ -1,5 +1,5 @@
 <template>
-  <div class="summary-main">
+  <div class="summary-main" id="Summary">
     <div class="summary-main-title">
       <div class="summary-text">Summary</div>
     </div>
@@ -26,7 +26,6 @@
 </template>
 
 <script>
-export default {};
 </script>
 
 <style scoped>
@@ -46,6 +45,7 @@ export default {};
 .summary-main-upper-content {
   margin-left: 25px;
   margin-top: 25px;
+  margin-bottom: 25px;
 }
 .summary-main-upper-content-top {
   width: 230px;
