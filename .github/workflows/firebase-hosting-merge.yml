@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install Dependencies # ← コマンド識別名
-        run: npm install　
+        run: npm install
       - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
