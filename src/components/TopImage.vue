@@ -29,10 +29,20 @@ export default {
   height: 100%;
   position: absolute;
 }
+@media screen and (max-width: 1000px) {
+  .top-image-content {
+    display: none;
+  }
+}
 .top-image-bottom {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  .top-image-bottom  {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -53,5 +63,10 @@ export default {
   color: #ffffff;
   align-self: center;
   z-index: 1;
+}
+@media screen and (max-width: 1000px) {
+  .top-image-bottom-text {
+    display: none;
+  }
 }
 </style>
